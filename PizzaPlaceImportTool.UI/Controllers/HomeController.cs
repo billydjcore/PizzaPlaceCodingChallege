@@ -31,12 +31,12 @@ namespace PizzaPlaceImportTool.UI.Controllers
         public IActionResult Index(CSVFileImportSetup csvFileImport)
         {
             csvFileImport.CSVFilePath = Path.Combine(_hostingEnvironment.WebRootPath, "csvfiles");
-
             CSVFileImportWorker csvImportWorker = new CSVFileImportWorker(csvFileImport.SelectedCSVFile, csvFileImport.CSVFilePath);
             string importResult = string.Empty;
             csvImportWorker.StartCSVImport(out importResult);
             csvFileImport.ImportResult = importResult;
             ViewData["CSVFileList"] = _hostingEnvironment.WebRootFileProvider.GetDirectoryContents("csvfiles").ToList().Select(f => Path.GetFileName(f.PhysicalPath)).ToList();
+
             return View(csvFileImport);
         }
         public IActionResult Privacy()
