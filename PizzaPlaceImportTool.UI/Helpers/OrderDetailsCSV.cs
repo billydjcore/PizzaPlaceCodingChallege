@@ -9,7 +9,6 @@ namespace PizzaPlaceImportTool.UI.Helpers
 {
     public class OrderDetailsCSV : CSVToSQLBulkCopy
     {
-  
         public OrderDetailsCSV(string csvFileFullPath) : base(csvFileFullPath)
         {
             var result = StartImport(csvFileFullPath).Result;
