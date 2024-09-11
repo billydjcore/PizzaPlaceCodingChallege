@@ -9,8 +9,7 @@ using Microsoft.VisualBasic.FileIO;
 namespace PizzaPlaceImportTool.UI.Helpers
 {
     public class PizzaTypeCSV : CSVToSQLBulkCopy
-    {
-        public List<PizzaTypeRow>? PizzaTypesList { get; set; }
+    {     
         public PizzaTypeCSV(string csvFileFullPath) : base(csvFileFullPath)
         {
             var result = StartImport(csvFileFullPath).Result;

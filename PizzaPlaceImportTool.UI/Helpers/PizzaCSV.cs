@@ -8,9 +8,7 @@ using System.Globalization;
 namespace PizzaPlaceImportTool.UI.Helpers
 {
     public class PizzaCSV :  CSVToSQLBulkCopy
-    {
-        public List<PizzaRow> PizzaList { get; set; }
-
+    {        
         public PizzaCSV(string csvFileFullPath) : base(csvFileFullPath) 
         {
             var result = StartImport(csvFileFullPath).Result;
