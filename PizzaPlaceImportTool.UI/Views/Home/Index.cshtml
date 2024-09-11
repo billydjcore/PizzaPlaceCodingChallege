@@ -1,0 +1,45 @@
+﻿@model CSVFileImportSetup;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>CSV Importing Tool</h1>
+    <form method="post" asp-action="Index" autocomplete="off">       
+        <div class="mt-3">
+            <label class="form-label">CSV File List</label>
+            <select class="form-select" aria-label="Default select example" asp-for="SelectedCSVFile" >
+                <option selected disabled>Select CSV File to import</option>
+                @foreach (var file in @ViewData["CSVFileList"] as List<string>)
+                {
+                    <option value=@file>@file</option>
+                }
+                
+                @*  <option value="3">Three</option> *@
+            </select>
+            <span  class="text-danger"></span>
+        </div>
+        <div class="mt-3">
+            <label class="form-label">Status</label>
+            @*  <input type="text" class="form-control" asp-for=@ViewData["Result"] readonly /> *@
+        </div> 
+        <div class="mt-3">
+            @if (Model == null || String.IsNullOrEmpty(Model.ImportResult))
+            {
+                <label class="form-label"></label>
+            }
+            else
+            {
+                <label class="form-label fw-bold fs-3" asp-for="ImportResult">@Model.ImportResult</label>
+            }
+            @*  <input type="text" class="form-control" asp-for=@ViewData["Result"] readonly /> *@
+        </div>
+        <div class="mt-3">
+            <button type="submit" class="btn btn-primary">Start Import</button>
+            @* <input type="submit" class="btn btn-primary" value="QuickSort" asp-for="SortingStrategy"></input> *@
+            @*  <button asp-action="Delete" asp-controller="Admin" type="submit" class="btn btn-danger">Delete</button> *@
+        </div>
+    </form>
+</div>

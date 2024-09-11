@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaPlace.Api", "PizzaPlace.Api.csproj", "{017D8764-C6E1-4274-8414-14285CD02E82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C0B3CAD6-D190-41BA-8C65-E2C2462DF472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaPlaceImportTool.UI", "..\PizzaPlaceImportTool.UI\PizzaPlaceImportTool.UI.csproj", "{854C81B5-B20C-47D0-959F-CA28771A791A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaPlace.Core", "..\PizzaPlace.Core\PizzaPlace.Core.csproj", "{55D029DF-6172-43FE-B675-DF5A23FB0DB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EDF7CEC1-DAC4-4711-A16E-7BFF96E46FFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaPlace.Infrastructure", "..\PizzaPlace.Infrastructure\PizzaPlace.Infrastructure.csproj", "{E4C02F2A-A7A5-4AA6-BB69-B2E640FE5FC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{017D8764-C6E1-4274-8414-14285CD02E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017D8764-C6E1-4274-8414-14285CD02E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017D8764-C6E1-4274-8414-14285CD02E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017D8764-C6E1-4274-8414-14285CD02E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854C81B5-B20C-47D0-959F-CA28771A791A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854C81B5-B20C-47D0-959F-CA28771A791A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854C81B5-B20C-47D0-959F-CA28771A791A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854C81B5-B20C-47D0-959F-CA28771A791A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D029DF-6172-43FE-B675-DF5A23FB0DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D029DF-6172-43FE-B675-DF5A23FB0DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D029DF-6172-43FE-B675-DF5A23FB0DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D029DF-6172-43FE-B675-DF5A23FB0DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C02F2A-A7A5-4AA6-BB69-B2E640FE5FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C02F2A-A7A5-4AA6-BB69-B2E640FE5FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C02F2A-A7A5-4AA6-BB69-B2E640FE5FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C02F2A-A7A5-4AA6-BB69-B2E640FE5FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{017D8764-C6E1-4274-8414-14285CD02E82} = {C0B3CAD6-D190-41BA-8C65-E2C2462DF472}
+		{854C81B5-B20C-47D0-959F-CA28771A791A} = {C0B3CAD6-D190-41BA-8C65-E2C2462DF472}
+		{55D029DF-6172-43FE-B675-DF5A23FB0DB9} = {C0B3CAD6-D190-41BA-8C65-E2C2462DF472}
+		{E4C02F2A-A7A5-4AA6-BB69-B2E640FE5FC3} = {C0B3CAD6-D190-41BA-8C65-E2C2462DF472}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC426BC6-A702-4FD4-A745-12C6D4D73541}
+	EndGlobalSection
+EndGlobal
